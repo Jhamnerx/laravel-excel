@@ -1,0 +1,22 @@
+INSTALAR LARAVEL CON JETSTREAM
+	laravel new laravel-excel --jet
+	
+	
+CREAR HOST LOCAL:
+	1:	C:\Windows\System32\drivers\etc
+		127.0.0.1	    laravel-excel.test
+	2: apache\conf\extra
+	
+	
+	
+	
+REALIZAMOS LAS MIGRACIONES:
+	php artisan migrate
+	
+CREAMOS LA MIGRACION DE CLIENTES
+	php artisan make:migration createClientesTable
+	
+	
+	
+CREAMOS EL MODELO JUNTO CON SU CONTROLLER Y REQUESTS
+	php artisan make:model Clientes --controller --resource --requests
